@@ -1,0 +1,10 @@
+CREATE DATABASE testjs;
+USE testjs;
+CREATE TABLE messages (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    mes VARCHAR(255) NOT NULL,
+    date DATETIME NULL DEFAULT NOW(),
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+INSERT INTO messages (mes)
+VALUES ("hi");
